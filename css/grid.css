@@ -1,28 +1,34 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    grid-gap: 2em;
-    background: lightcoral;
+    grid-column-gap: 1em;
+    background: aliceblue;
 }
 .menu{
     background: aliceblue;
     grid-row: 1/9;
 }
 
-.picture {
-
-}
 
 .main{
-    grid-column: 2/4;
+    grid-column: 2/3;
+    background: lightcoral;
+    padding-top: 30px;
 
 }
 .main div{
     padding-top: 30px;
-    padding-right: 180px;
+    grid-row: 2/9;
 }
 
 .bottom {
     display: grid;
     grid-column: 2/4;
+    padding-top: 15px;
+    grid-row: 3/9;
+    background: lightcoral;
+}
+.top {
+    grid-column: 2/3;
+    background: lightcoral;
 }
