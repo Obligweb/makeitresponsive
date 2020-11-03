@@ -1,0 +1,16 @@
+ul.menu{
+    list-style-type: none;
+    background-position: fixed;
+}
+li{
+    float: left;
+}
+li a {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+li a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    font-weight: bold;
+}

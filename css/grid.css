@@ -1,0 +1,10 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+.menu{
+
+}
+.main{
+    grid-column: 2/5;
+}
