@@ -21,13 +21,6 @@
     grid-row: 2/9;
 }
 
-.bottom {
-    display: grid;
-    grid-column: 2/4;
-    padding-top: 15px;
-    grid-row: 3/9;
-    background: lightcoral;
-}
 .top {
     grid-column: 2/3;
     background: lightcoral;
