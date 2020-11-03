@@ -1,9 +1,12 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
+    grid-gap: 2em;
+    background: lightcoral;
 }
 .menu{
-
+    background: aliceblue;
+    grid-row: 1/9;
 }
 
 .picture {
@@ -12,6 +15,7 @@
 
 .main{
     grid-column: 2/4;
+
 }
 .main div{
     padding-top: 30px;
@@ -20,9 +24,5 @@
 
 .bottom {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1em;
-    padding-bottom: 30px;
-    background: lightgrey;
     grid-column: 2/4;
 }
