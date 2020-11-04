@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 5fr 1fr;
     grid-column-gap: 1em;
     background: aliceblue;
+    position: relative;
 }
 .menu{
     background: aliceblue;
@@ -13,15 +14,22 @@
 .main{
     grid-column: 2/3;
     background: lightcoral;
-    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
 .main div{
-    padding-top: 30px;
+    padding-top: 50px;
     grid-row: 2/9;
 }
 
 .top {
     grid-column: 2/3;
     background: lightcoral;
+
+}
+.banner {
+    position: absolute;
+    bottom: 600px;
+    left: 320px;
 }
