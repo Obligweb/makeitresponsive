@@ -6,8 +6,8 @@
     position: relative;
 }
 .menu{
-    background: aliceblue;
     grid-row: 1/9;
+    background: aliceblue;
 }
 
 
@@ -16,7 +16,7 @@
     background: lightcoral;
     padding-left: 15px;
     padding-right: 15px;
-
+    padding-top: 50px;
 }
 .main div{
     padding-top: 50px;
@@ -25,11 +25,10 @@
 
 .top {
     grid-column: 2/3;
-    background: lightcoral;
-
+    background: aliceblue;
 }
 .banner {
     position: absolute;
-    bottom: 600px;
+    bottom: 740px;
     left: 320px;
 }
