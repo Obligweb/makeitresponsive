@@ -1,7 +1,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    grid-column-gap: 1em;
+    grid-column-gap: 0em; /* (1em) */
     background: aliceblue;
 }
 .menu{
@@ -23,5 +23,7 @@
 
 .top {
     grid-column: 2/3;
-    background: lightcoral;
+    background: white;
+    margin-top: -32px;
+    padding-bottom: 55px;
 }
