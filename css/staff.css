@@ -23,9 +23,9 @@
   height: 250px;
   width: auto;
   border-radius: 50%;
-  cursor: pointer;
   transition: 200ms;
   filter: brightness(90%);
+  border: 2px solid black;
 }
 
 .member:hover .profile-image {
@@ -78,4 +78,16 @@
     text-align: center;
     margin: 100px 20px 0px 20px;
   }
+}
+
+@media only screen and (max-width: 452px){
+
+  .top h1 {
+    font-size:calc(40px + 1vw);
+  }
+
+  .staff {
+    margin: 25px 0; 
+  }
+    
 }
