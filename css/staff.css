@@ -1,8 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  font-family: Garamond, sans-serif;
+  display: block;
+  text-align: center;
+  font-size: 180%;
+  margin-bottom: -16px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid black;
+}
+
+.menu img {
+  border-radius: 200%;
+  cursor: pointer;
+}
+
+.menu img:hover {
+  filter: brightness(115%);
+}
+
 .top h1 {
-  font-size: 400%;
+  font-size: calc(40px + 1vw);
   font-family: Garamond, sans-serif;
   text-align: center;
-  margin: 100px 60px 10px 60px;
+  margin: 100px 60px 0px 60px;
 }
 
 .staff {
@@ -23,9 +50,9 @@
   height: 250px;
   width: auto;
   border-radius: 50%;
-  cursor: pointer;
   transition: 200ms;
   filter: brightness(90%);
+  border: 2px solid black;
 }
 
 .member:hover .profile-image {
@@ -51,10 +78,6 @@
 }
 
 @media only screen and (max-width: 1150px) {
-  .top h1 {
-    font-size: 380%;
-  }
-
   .staff {
     flex-direction: column;
   }
@@ -74,8 +97,26 @@
 
 @media only screen and (max-width: 832px) {
   .top h1 {
-    font-size: 350%;
+    /* font-size: 350%; */
     text-align: center;
     margin: 100px 20px 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 452px) {
+  .staff {
+    margin: 25px 0px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    color: transparent;
+    cursor: default;
   }
 }
