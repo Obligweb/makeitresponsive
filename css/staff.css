@@ -121,8 +121,6 @@ h2 {
   }
 }
 
-
-
 /* Skal plasseres i riktig css.folder til slutt */
 .container {
   display: grid;
@@ -130,6 +128,14 @@ h2 {
   grid-column-gap: 0em; /* (1em) */
   background: aliceblue;
   grid-template-rows: 274px;
+}
+
+.top {
+  grid-column: 2/3;
+  background: white;
+  /* margin-top: -32px; */
+  border-bottom: 3px solid black;
+  padding-bottom: 55px;
 }
 
 .main {
@@ -143,12 +149,14 @@ h2 {
   grid-row: 2/9;
 }
 
-.top {
-  grid-column: 2/3;
-  background: white;
-  /* margin-top: -32px; */
-  border-bottom: 3px solid black;
-  padding-bottom: 55px;
+.contact {
+  grid-row: 3/3;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+  letter-spacing: 1px;
 }
 
 @media only screen and (max-width: 630px) {
@@ -163,6 +171,19 @@ h2 {
 
   .top {
     grid-column: 1;
+  }
+
+  .menu {
+    grid-row: 1;
+  }
+
+  .contact {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 20px;
+    padding: 30px 30px;
+    line-height: 30px;
+    justify-content: space-evenly;
   }
 }
 
