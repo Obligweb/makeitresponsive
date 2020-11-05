@@ -183,6 +183,7 @@ li {
   display: block;
   text-align: center;
   list-style-type: none;
+  padding: 0;
   /* width: fit-content; */
 }
 
@@ -230,7 +231,7 @@ li a:active {
 
   li {
     float: left;
-    padding: 0;
+    padding: 0px;
     border-bottom: 3px solid black;
     border-top: 3px solid black;
   }
@@ -241,7 +242,6 @@ li a:active {
     text-align: center;
     padding: 18px 16px;
     text-decoration: none;
-    
   }
 
   li a:hover {
