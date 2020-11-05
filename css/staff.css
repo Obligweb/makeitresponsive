@@ -129,6 +129,7 @@ h2 {
   grid-template-columns: 1fr 5fr 1fr;
   grid-column-gap: 0em; /* (1em) */
   background: aliceblue;
+  grid-template-rows: 274px;
 }
 
 .main {
@@ -145,7 +146,8 @@ h2 {
 .top {
   grid-column: 2/3;
   background: white;
-  margin-top: -32px;
+  /* margin-top: -32px; */
+  border-bottom: 3px solid black;
   padding-bottom: 55px;
 }
 
@@ -168,7 +170,7 @@ h2 {
 
 .active {
   color: black;
-  background-color: lightgray;
+  background-color: rgba(135, 206, 250, 0.541);
   text-decoration: none;
   font-weight: bold;
 }
@@ -183,8 +185,7 @@ li {
   display: block;
   text-align: center;
   list-style-type: none;
-  padding: 0;
-  /* width: fit-content; */
+  padding: 4px;
 }
 
 li a {
