@@ -201,11 +201,11 @@ li a:hover {
   text-decoration: none;
   text-decoration-color: black;
   font-weight: bold;
-  background-color: whitesmoke;
+  background-color: lightgray;
 }
 
 li a.active:hover {
-  background-color: lightgray;
+  background-color: rgba(135, 206, 250, 0.541);
   font-weight: bold;
 }
 
