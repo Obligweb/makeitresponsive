@@ -1,18 +1,16 @@
+
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-column-gap: 0em; /* (1em) */
   background: aliceblue;
 }
-.menu {
-  background: aliceblue;
-  grid-row: 1/9;
-}
-
 .main {
   grid-column: 2/3;
   background: lightcoral;
   padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .main div {
   padding-top: 30px;
@@ -38,5 +36,19 @@
 
   .top {
     grid-column: 1;
+    background: aliceblue;
   }
+
+
+}
+.menu{
+    grid-row: 1/9;
+    background: aliceblue;
+}
+
+}
+.banner {
+    position: absolute;
+    bottom: 740px;
+    left: 320px;
 }
