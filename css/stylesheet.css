@@ -35,3 +35,47 @@ p1{
     padding-left: 40px;
 
 }
+
+.topH {
+  grid-column: 2/3;
+  background: white;
+  /* margin-top: -32px; */
+  border-bottom: 3px solid black;
+  padding-bottom: 55px;
+}
+
+.topH h1 {
+  font-size: 100px;
+  font-family: Garamond, sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 60px;
+}
+
+@media only screen and (max-width: 630px) {
+  .container {
+    grid-template-columns: auto;
+  }
+
+  .main {
+    grid-column: 1;
+    padding: 15px;
+  }
+
+  .topH{
+    grid-column: 1;
+  }
+
+  .menu {
+    grid-row: 1;
+  }
+
+  .contact {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 20px;
+    padding: 30px 30px;
+    line-height: 30px;
+    justify-content: space-evenly;
+  }
+}

@@ -16,9 +16,15 @@ h2 {
   border-bottom: 3px solid black;
 }
 
-.menu img {
-  border-radius: 200%;
+.menu center a {
+  cursor: default;
+}
+
+.menu a img {
+  vertical-align: middle;
+  border-radius: 100%;
   cursor: pointer;
+  padding-top: 15px;
 }
 
 .menu img:hover {
@@ -29,7 +35,7 @@ h2 {
   font-size: calc(40px + 1vw);
   font-family: Garamond, sans-serif;
   text-align: center;
-  margin: 100px 60px 0px 60px;
+  margin: 60px 60px 0px 60px;
 }
 
 .staff {
@@ -60,7 +66,7 @@ h2 {
 }
 
 .member-name {
-  margin-top: 15px;
+  margin-top: 30px;
   font-size: 32px;
   margin-bottom: 8px;
   padding-left: 0;
@@ -74,7 +80,7 @@ h2 {
 }
 
 .member p {
-  margin-top: 18px;
+  margin-top: 15px;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -99,13 +105,13 @@ h2 {
   .top h1 {
     /* font-size: 350%; */
     text-align: center;
-    margin: 100px 20px 0px 20px;
+    margin: 60px 20px 0px 20px;
   }
 }
 
 @media only screen and (max-width: 452px) {
   .staff {
-    margin: 25px 0px;
+    margin: 35px 0px;
   }
 }
 
@@ -121,13 +127,74 @@ h2 {
   }
 }
 
+.blink {
+  width: calc(fit-content + 20px);
+
+  height: fit-content;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: -30px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+ul:target .blink {
+  animation: blink 3s linear;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: aliceblue;
+  }
+
+  20% {
+    background-color: rgba(0, 128, 0, 0.247);
+  }
+
+  50% {
+    background-color: rgba(0, 128, 0, 0.788);
+  }
+
+  80% {
+    background-color: rgba(0, 128, 0, 0.247);
+  }
+
+  100% {
+    background-color: aliceblue;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: aliceblue;
+  }
+
+  20% {
+    background-color: rgba(0, 128, 0, 0.247);
+  }
+  50% {
+    background-color: rgb(0, 128, 0);
+  }
+
+  80% {
+    background-color: rgba(0, 128, 0, 0.247);
+  }
+  100% {
+    background-color: aliceblue;
+  }
+}
+
 /* Skal plasseres i riktig css.folder til slutt */
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-column-gap: 0em; /* (1em) */
   background: aliceblue;
-  grid-template-rows: 274px;
+  grid-template-rows: 234px;
+}
+
+.border {
+  border-top: 3px solid black;
 }
 
 .top {
@@ -136,6 +203,7 @@ h2 {
   /* margin-top: -32px; */
   border-bottom: 3px solid black;
   padding-bottom: 55px;
+  height: 234px;
 }
 
 .main {
@@ -236,13 +304,16 @@ li a:active {
 }
 
 @media only screen and (max-width: 630px) {
+  .top h1 {
+    margin: 0;
+    padding-right: 20px;
+    padding-top: 50px 10px;
+    margin-top: 90px;
+  }
+
   .active {
     margin-top: 0px;
     font-weight: bold;
-  }
-
-  .top1 {
-    padding-top: 50px;
   }
 
   .menu ul {
@@ -259,15 +330,15 @@ li a:active {
     float: left;
     padding: 0px;
     border-bottom: 3px solid black;
-    border-top: 3px solid black;
   }
 
   li a {
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 18px 16px;
+    padding: 25px 16px;
     text-decoration: none;
+    border: 1px solid black;
   }
 
   li a:hover {

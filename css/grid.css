@@ -1,8 +1,11 @@
-.container{
+.container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
+  grid-column-gap: 0em; /* (1em) */
   background: aliceblue;
+  grid-template-rows: 274px;
 }
+
 .menu{
   grid-row: 1/9;
   background: aliceblue;
