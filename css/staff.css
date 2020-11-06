@@ -241,6 +241,10 @@ li a:active {
     font-weight: bold;
   }
 
+  .top1 {
+    padding-top: 50px;
+  }
+
   .menu ul {
     list-style-type: none;
     margin: 0;
