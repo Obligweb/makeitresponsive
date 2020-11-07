@@ -39,7 +39,7 @@ h2 {
 }
 
 .top h1 {
-  font-size: calc(40px + 1vw);
+  font-size: calc(40px + 2vw);
   font-family: Garamond, sans-serif;
   text-align: center;
   margin: 60px 60px 0px 60px;
@@ -155,7 +155,7 @@ ul:target .blink {
 }
 
 @-webkit-keyframes blink {
-  0% {
+   0% {
     background-color: aliceblue;
   }
 
@@ -196,6 +196,9 @@ ul:target .blink {
 }
 
 .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column: 2/3;
   background: white;
   /* margin-top: -32px; */
