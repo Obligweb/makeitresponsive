@@ -1,3 +1,9 @@
+
+body{
+    background: aliceblue;
+}
+
+}
 .h1 {
     display: block;
     font-size: 2em;
@@ -38,9 +44,7 @@
     justify-content: center;
     margin: 4rem 0;
 }
-.p:hover{
-    filter: brightness(100%);
-}
+
 .div{
     display: block;
 }
@@ -51,6 +55,42 @@
     margin: 4rem 0;
 }
 
+
+.kjør{
+
+}
+
 .schedule{
     font-size: 20px;
 }
+
+.tittel {
+
+}
+
+@media only screen and (max-width: 1150px) {
+    .container2 {
+        font-size: 100%;
+    }
+
+    .tittel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .p {
+        text-align: center;
+        margin: 20px 60px 70px 60px;
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 832px) {
+    .p {
+        font-size: 350%;
+        text-align: center;
+        margin: 100px 20px 0px 20px;
+    }
+}
+
