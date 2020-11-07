@@ -1,9 +1,7 @@
 .container{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-column-gap: 1em;
   background: aliceblue;
-  position: relative;
 }
 .menu{
   grid-row: 1/9;
@@ -16,19 +14,19 @@
   background: lightcoral;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 50px;
+
 }
 .main div{
-  padding-top: 50px;
+
   grid-row: 2/9;
 }
 
-.top {
-  grid-column: 2/3;
-  background: aliceblue;
+.top1 {
+  border-bottom: 3px solid black;
+  height: 273px;
+
 }
 .banner {
-  position: absolute;
-  bottom: 740px;
-  left: 320px;
+  position: relative;
+
 }

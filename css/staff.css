@@ -75,6 +75,49 @@ h2 {
 
 .member p {
   margin-top: 18px;
+  margin-top: 15px;
+}
+
+.blink {
+  width: calc(fit-content + 20px);
+
+  height: fit-content;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+ul:target .blink {
+  animation: blink 3s linear;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: aliceblue;
+  }
+
+  50% {
+    background-color: rgba(0, 128, 0, 0.548);
+  }
+
+  100% {
+    background-color: aliceblue;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: aliceblue;
+  }
+
+  50% {
+    background-color: rgba(0, 128, 0, 0.548);
+  }
+
+  100% {
+    background-color: aliceblue;
+  }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -99,7 +142,7 @@ h2 {
   .top h1 {
     /* font-size: 350%; */
     text-align: center;
-    margin: 100px 20px 0px 20px;
+    margin: 60px 20px 5px 20px;
   }
 }
 
@@ -241,6 +284,10 @@ li a:active {
     font-weight: bold;
   }
 
+  .top1 {
+    padding-top: 50px;
+  }
+
   .menu ul {
     list-style-type: none;
     margin: 0;
@@ -262,7 +309,7 @@ li a:active {
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 18px 16px;
+    padding: 18px 0px;
     text-decoration: none;
   }
 
