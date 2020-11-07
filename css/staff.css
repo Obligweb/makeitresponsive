@@ -75,6 +75,63 @@ h2 {
 
 .member p {
   margin-top: 18px;
+  margin-top: 15px;
+}
+
+.blink {
+  width: calc(fit-content + 20px);
+
+  height: fit-content;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+ul:target .blink {
+  animation: blink 3s linear;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: aliceblue;
+  }
+
+  20% {
+    background-color: rgba(0, 128, 0, 0.247);
+  }
+
+  50% {
+    background-color: rgba(0, 128, 0, 0.788);
+  }
+
+  80% {
+    background-color: rgba(0, 128, 0, 0.247);
+  }
+
+  100% {
+    background-color: aliceblue;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: aliceblue;
+  }
+
+  20% {
+    background-color: rgba(0, 128, 0, 0.247);
+  }
+  50% {
+    background-color: rgb(0, 128, 0);
+  }
+
+  80% {
+    background-color: rgba(0, 128, 0, 0.247);
+  }
+  100% {
+    background-color: aliceblue;
+  }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -99,7 +156,7 @@ h2 {
   .top h1 {
     /* font-size: 350%; */
     text-align: center;
-    margin: 100px 20px 0px 20px;
+    margin: 60px 20px 5px 20px;
   }
 }
 
