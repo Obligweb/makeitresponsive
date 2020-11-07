@@ -361,7 +361,7 @@ li a:active {
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 25px 16px;
+    padding: 25px 0px;
     text-decoration: none;
     border: 1px solid black;
   }
