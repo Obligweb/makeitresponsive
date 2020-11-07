@@ -55,8 +55,9 @@ h2 {
   justify-content: space-around;
 }
 
-.member {
+.staff .member {
   flex-basis: 250px;
+  padding-top: 0px;
 }
 
 .profile-image {
@@ -96,15 +97,16 @@ h2 {
 
 @media only screen and (min-width: 1150px) {
   .member-name {
-    padding-left: 20px;
+    padding-left: 10px;
+    margin-top: 20px;
   }
 
   .staff h5 {
-    padding-left: 20px;
+    padding-left: 10px;
   }
 
   .member p {
-    padding-left: 20px;
+    padding-left: 10px;
   }
 }
 
@@ -236,7 +238,7 @@ ul:target .blink {
 
 .contact {
   grid-row: 3/3;
-  padding: 30px 20px;
+  padding: 8px 20px;
   padding-right: 0px;
   display: flex;
   flex-direction: row;
